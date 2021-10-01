@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>js string</title>
+</head>
+<body>
+    <script>
+        function klik()
+        {
+const x="wjeżdżam na peron jak towar na rejon piątki się dzielą, się kleją Kleją się dupy Patrzą się typy może się skończyć aferą Szybko wyłapał na ryj Bomba na banie, kończymy balet Najlepszy budzik – syreny nad ranem Na Wisłostradę jadę jaguarem Na całej piździe przed fotoradarem Nie lubią mnie typy A kochają fanki Biorę oryginał, a pierd* plastyk Wisiory na karki, złote zegarki Dresowy styl, na systemie nike-i"
+ const a=document.getElementById('a').value  
+ const d=document.getElementById('d').value     
+
+//1
+console.log(x.length)
+//2
+console.log(x.charAt(a))
+//3
+document.write(x.toUpperCase())
+//4
+console.log(x.substr(a,d))
+//5
+const ad =x.replace("peron", "JebanieDisa")
+console.log(ad)
+document.write (x.replace("peron","Jebanie Disa"))
+//6
+console.log(x.split('a').length-1)
+//7
+const ork=x.split(",")
+console.log(ork)
+//8
+
+
+}
+
+</script>
+
+<input type="number" id="a"><br>
+<input type="number" id="d"><br>
+<button onclick="klik()">kliknij</button>
+    
+</body>
+</html>
